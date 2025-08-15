@@ -1,39 +1,37 @@
-Task Forge Backend
+Project Overview
+✨ Feature list
+🏗️ Architecture diagram
+🚀 Quick start guide
 
-Express + MongoDB (Mongoose) + JWT + Multer + Swagger.
+Setup Instructions
+Backend setup with environment configuration
+Frontend setup
+MongoDB connection options (Atlas)
 
-Setup
+Technical Details
+📚 Complete API endpoint documentation
+🧪 Testing instructions
+🐳 Docker support
+📁 Detailed project structure
 
-1. Copy `.env.example` to `.env` and adjust values.
-2. Install dependencies:
+Configuration
+Environment variables table
+Security features
+Technology stack details
 
-```bash
-npm install
-```
+Troubleshooting
+Common issues and solutions
+Development mode fallback
+Support resources
 
-3. Start dev server:
+Developer Experience
+Available scripts
+Contributing guidelines
+License information
 
-```bash
-npm run dev
-```
-
-Swagger docs at `/api-docs`.
-
-Testing
-
-```bash
-npm test
-npm run test:coverage
-```
-
-Docker
-
-```bash
-docker-compose up --build
-```
-
-Storage
-- Set `STORAGE_TYPE=local` or `s3`.
-- Local uploads are served under `/uploads`.
-
-
+🎯 Key Benefits:
+Easy Setup: Step-by-step instructions for both backend and frontend
+Multiple MongoDB Options: Local, cloud, or Docker setup
+Comprehensive Documentation: API endpoints, project structure, troubleshooting
+Professional Presentation: Clean formatting with emojis and clear sections
+Developer Friendly: Scripts, testing, and contribution guidelines
