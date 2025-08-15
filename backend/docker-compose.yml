@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_data:/data/db
+  backend:
+    build: .
+    env_file:
+      - .env
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/task_forge
+      - STORAGE_TYPE=local
+      - UPLOAD_DIR=uploads
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./uploads:/app/uploads
+    depends_on:
+      - mongo
+volumes:
+  mongo_data:
+
+
